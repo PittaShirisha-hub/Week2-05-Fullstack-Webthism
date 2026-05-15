@@ -97,78 +97,207 @@ week2-fullstack-todo-app/
 └── README.md
 ```
 
-Installation
-Clone Repository
-git clone https://github.com/YOUR_USERNAME/week2-fullstack-todo-app.git
-Backend Setup
-Navigate to Server Folder
+# Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/PittaShirisha-hub/Week2-05-Fullstack-Webthism.git
+```
+
+---
+
+# Backend Setup
+
+## Navigate to Server Folder
+
+```bash
 cd server
-Install Dependencies
+```
+
+## Install Dependencies
+
+```bash
 npm install
-Create .env File
+```
+
+## Create `.env` File
+
+```env
 MONGO_URL=your_mongodb_connection_string
-Start Backend Server
+```
+
+## Start Backend Server
+
+```bash
 npm start
+```
 
 Backend runs on:
 
+```bash
 http://localhost:5000
-Frontend Setup
-Navigate to Client Folder
+```
+
+---
+
+# Frontend Setup
+
+## Navigate to Client Folder
+
+```bash
 cd client
-Install Dependencies
+```
+
+## Install Dependencies
+
+```bash
 npm install
-Start React App
+```
+
+## Start React App
+
+```bash
 npm start
+```
 
 Frontend runs on:
 
+```bash
 http://localhost:3000
-API Endpoints
-Get All Todos
+```
+
+---
+
+# API Endpoints
+
+## Get All Todos
+
+```http
 GET /api/todos
-Add Todo
+```
+
+---
+
+## Add Todo
+
+```http
 POST /api/todos
+```
 
-Body:
+### Request Body
 
+```json
 {
   "text": "Learn React"
 }
-Update Todo
+```
+
+---
+
+## Update Todo
+
+```http
 PUT /api/todos/:id
-Delete Todo
+```
+
+### Request Body
+
+```json
+{
+  "text": "Updated Todo"
+}
+```
+
+---
+
+## Delete Todo
+
+```http
 DELETE /api/todos/:id
+```
 
-Screenshots
+---
 
-Application Screenshot
+# Screenshots
 
-Learning Outcomes
+## Application Screenshot
+
+![Todo App Screenshot](./screenshots/todo-app.png)
+
+---
+
+# Learning Outcomes
 
 This project helped in learning:
 
-Full Stack Development
-REST APIs
-React State Management
-MongoDB Database Integration
-CRUD Operations
-Frontend & Backend Connection
-Axios API Calls
-Error Handling
-Loading States
-Professional UI Design
+- Full Stack Development
+- REST APIs
+- React State Management
+- MongoDB Database Integration
+- CRUD Operations
+- Frontend & Backend Connection
+- Axios API Calls
+- Error Handling
+- Loading States
+- Professional UI Design
 
-Future Improvements
+---
 
-Authentication
-User Accounts
-Dark Mode
-Task Categories
-Due Dates
-Drag and Drop Todos
-Deployment using Render/Vercel
+# Future Improvements
 
-Author
+- Authentication
+- User Accounts
+- Dark Mode
+- Task Categories
+- Due Dates
+- Drag and Drop Todos
+- Deployment using Render/Vercel
+
+---
+
+# Git Commands
+
+## Initialize Git
+
+```bash
+git init
+```
+
+## Add Files
+
+```bash
+git add .
+```
+
+## Commit Files
+
+```bash
+git commit -m "Completed professional full stack todo app"
+```
+
+## Add Remote Repository
+
+```bash
+git remote add origin https://github.com/PittaShirisha-hub/Week2-05-Fullstack-Webthism.git
+```
+
+## Create Main Branch
+
+```bash
+git branch -M main
+```
+
+## Push Code
+
+```bash
+git push -u origin main
+```
+
+---
+
+# Author
 
 Shirisha Pitta
+
+---
