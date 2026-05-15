@@ -124,7 +124,7 @@ npm install
 ## Create `.env` File
 
 ```env
-MONGO_URL=your_mongodb_connection_string
+MONGO_URL="mongodb+srv://admin:admin123@cluster0.oheks6m.mongodb.net/todoweek2?retryWrites=true&w=majority"
 ```
 
 ## Start Backend Server
