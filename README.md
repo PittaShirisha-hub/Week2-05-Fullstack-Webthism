@@ -95,6 +95,7 @@ week2-fullstack-todo-app/
 │
 ├── .gitignore
 └── README.md
+```
 
 Installation
 Clone Repository
