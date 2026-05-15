@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+}
+
+
+
+/* MAIN CONTAINER */
+.app {
+  width: 500px;
+  margin: 60px auto;
+  background: rgb(179, 216, 210);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* TITLE */
+h1 {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 30px;
+}
+
+
+
+/* INPUT */
+input {
+  padding: 12px;
+  width: 65%;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+
+
+/* ALL BUTTONS */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+
+
+/* ADD BUTTON */
+.add-btn {
+  background-color: #2563eb;
+}
+
+.add-btn:hover {
+  background-color: #033cd8;
+}
+
+
+
+/* EDIT BUTTON */
+.edit-btn {
+  background-color: #4ac9ba;
+}
+
+.edit-btn:hover {
+  background-color: #318d9d;
+}
+
+
+
+/* DELETE BUTTON */
+.delete-btn {
+  background-color: #e43e5a;
+}
+
+.delete-btn:hover {
+  background-color: #d10a0a;
+}
+
+
+
+/* SAVE BUTTON */
+.save-btn {
+  background-color: #10b981;
+}
+
+.save-btn:hover {
+  background-color: #059669;
+}
+
+
+
+/* TODO CARD */
+.todo-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 18px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+
+/* TODO TEXT */
+.todo-text {
+  font-size: 18px;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+
+
+/* ERROR */
+.error {
+  color: #dc2626;
+  margin-bottom: 10px;
+}
+
+
+
+/* LOADING */
+.loading {
+  color: #2563eb;
+  font-weight: bold;
+}
