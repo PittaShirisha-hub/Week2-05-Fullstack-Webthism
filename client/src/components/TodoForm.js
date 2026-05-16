@@ -4,6 +4,8 @@ function TodoForm({ addTodo }) {
 
     const [text, setText] = useState("");
 
+    const [priority, setPriority] = useState("Low");
+
 
 
     const handleSubmit = (e) => {
@@ -12,16 +14,21 @@ function TodoForm({ addTodo }) {
 
         if (!text) return;
 
-        addTodo(text);
+        addTodo(text, priority);
 
         setText("");
+
+        setPriority("Low");
     };
 
 
 
     return (
 
-        <form onSubmit={handleSubmit}>
+        <form
+            className="todo-form"
+            onSubmit={handleSubmit}
+        >
 
             <input
                 type="text"
@@ -31,6 +38,31 @@ function TodoForm({ addTodo }) {
                     setText(e.target.value)
                 }
             />
+
+
+
+            <select
+                value={priority}
+                onChange={(e) =>
+                    setPriority(e.target.value)
+                }
+            >
+
+                <option value="High">
+                    High
+                </option>
+
+                <option value="Medium">
+                    Medium
+                </option>
+
+                <option value="Low">
+                    Low
+                </option>
+
+            </select>
+
+
 
             <button
                 className="add-btn"

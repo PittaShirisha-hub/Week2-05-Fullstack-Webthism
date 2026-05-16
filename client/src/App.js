@@ -43,11 +43,16 @@ function App() {
 
 
     // ADD TODO
-    const addTodo = async (text) => {
+    const addTodo = async (text, priority) => {
 
         try {
 
-            await API.post("/", { text });
+            await API.post("/", {
+
+                text,
+
+                priority
+            });
 
             fetchTodos();
 
@@ -79,12 +84,15 @@ function App() {
 
 
     // EDIT TODO
-    const editTodo = async (id, updatedText) => {
+    const editTodo = async (id, updatedText, updatedPriority) => {
 
         try {
 
             await API.put(`/${id}`, {
-                text: updatedText
+
+                text: updatedText,
+
+                priority: updatedPriority
             });
 
             fetchTodos();
@@ -113,8 +121,11 @@ function App() {
             <h1>Todo App</h1>
 
             {error && (
+
                 <p className="error">
+
                     {error}
+
                 </p>
             )}
 
@@ -124,7 +135,9 @@ function App() {
                 loading ? (
 
                     <p className="loading">
+
                         Loading...
+
                     </p>
 
                 ) : (

@@ -28,7 +28,10 @@ const addTodo = async (req, res) => {
     try {
 
         const newTodo = new Todo({
-            text: req.body.text
+
+            text: req.body.text,
+
+            priority: req.body.priority
         });
 
         const savedTodo = await newTodo.save();
@@ -52,10 +55,16 @@ const updateTodo = async (req, res) => {
     try {
 
         const updatedTodo = await Todo.findByIdAndUpdate(
+
             req.params.id,
+
             {
-                text: req.body.text
+
+                text: req.body.text,
+
+                priority: req.body.priority
             },
+
             {
                 new: true
             }
@@ -96,8 +105,12 @@ const deleteTodo = async (req, res) => {
 
 
 module.exports = {
+
     getTodos,
+
     addTodo,
+
     updateTodo,
+
     deleteTodo
 };

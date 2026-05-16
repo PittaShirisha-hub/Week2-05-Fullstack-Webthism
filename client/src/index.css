@@ -28,14 +28,35 @@ h1 {
 
 
 
+/* FORM LAYOUT */
+.todo-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+
 /* INPUT */
 input {
   padding: 12px;
-  width: 65%;
+  flex: 1;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
-  margin-right: 10px;
   font-size: 16px;
+}
+
+
+
+/* PRIORITY DROPDOWN */
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  background-color: white;
+  cursor: pointer;
 }
 
 
@@ -114,6 +135,24 @@ button {
   font-size: 18px;
   color: #334155;
   margin-bottom: 12px;
+}
+
+
+
+/* PRIORITY COLORS */
+.priority-high {
+  color: #261dc4;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: #f10707;
+  font-weight: bold;
+}
+
+.priority-low {
+  color: #02ff30;
+  font-weight: bold;
 }
 
 
